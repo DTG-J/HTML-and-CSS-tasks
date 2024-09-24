@@ -4,16 +4,31 @@
 }
 .css-box-model div{
     border: 1px dashed #5b5b5b;
-    margin: 20px;
+    margin: 10px 20px 20px 20px;
+}
+.css-box-model div::before{
+    padding-left: 10px;
+    font-size: 10px;
+    display: block;
 }
 .css-box-model .margin {
     background:#ff966f;
 }
+.css-box-model .margin:before {
+    content: 'margin';
+
+}
 .css-box-model .border{
     background-color: hsl(35.79deg 100% 88.82%)
 }
+.css-box-model .border:before {
+    content: 'border';
+}
 .css-box-model .padding{
     background-color: #85eb85;
+}
+.css-box-model .padding:before {
+    content: 'padding';
 }
 .css-box-model .content{
     background: #a3d2e2;
