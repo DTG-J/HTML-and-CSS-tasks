@@ -31,8 +31,11 @@ font-weight: 600;
 }
 .f-italic {
 font-style: italic;
-white-space: nowrap;
+
+.limit-lines{
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 300px;
+}
 }
