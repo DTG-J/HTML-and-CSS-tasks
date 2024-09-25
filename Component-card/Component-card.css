@@ -1,5 +1,6 @@
 body{
     background-color: hsl(0deg 0% 92.16%);
+    font-family: Arial, Helvetica, sans-serif ;
 }
 .card{
     width: 30%;
@@ -31,11 +32,11 @@ font-weight: 600;
 }
 .f-italic {
 font-style: italic;
-
+}
 .limit-lines{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 300px;
 }
-}
+
