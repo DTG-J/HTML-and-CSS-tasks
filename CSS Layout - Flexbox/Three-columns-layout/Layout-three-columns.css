@@ -35,6 +35,34 @@ body {
     text-align: center;
 }
 
-.columns article {
+.columns > article {
     flex: 0 0 calc((100% / 3) - (2 * 20px));
+}
+
+.columns > header h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.columns > header p {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+header:after,
+footer::before {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: grey;
+    margin: 30px auto 0 auto;
+}
+
+footer {
+    opacity: 0.7;
+}
+
+footer::before {
+    margin: 30px auto;
 }
