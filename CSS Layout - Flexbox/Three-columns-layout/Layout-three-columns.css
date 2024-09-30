@@ -12,3 +12,29 @@ a {
 body {
    background-color:#eeeeee;
 }
+
+.container {
+    margin: 30px;
+}
+
+.columns {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 30px 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.columns > header,
+.columns > footer {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.columns article {
+    flex: 0 0 calc((100% / 3) - (2 * 20px));
+}
