@@ -57,3 +57,7 @@ body {
 .site.two > aside {
     order: 2;
 }
+
+.site.two {
+    width: 100%;
+}
