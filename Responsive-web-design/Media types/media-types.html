@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Types</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 2em;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            background-color: #F5F5F5; /* Light grey background */
+            color: #333;
+        }
+
+        .header {
+            background-color: #4267B2;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+    /*.section {
+            margin-bottom: 3em;
+        }
+
+        .section h2 {
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+        }
+
+        .code-block {
+            background-color: #F5F5F5;
+            border: 1px solid #DDD;
+            padding: 1em;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre;
+        }
+
+        .code-block p {
+            margin: 0;
+            padding-bottom: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">The page is being shown on a screen</div>
+
+    <div class="section">
+        <h1>Media Types</h1>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types">https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types</a></p>
+        <p>Media types describe the general category of a device. Except when using the not or only logical operators, the media type is optional and the all type is implied.</p>
+    </div>
+
+    <div class="section">
+        <h2>all</h2>
+        <p>Suitable for all devices</p>
+        <div class="code-block">
+            <p>@media all {</p>
+            <p>  * {</p>
+            <p>    padding: 0;</p>
+            <p>    margin: 0;</p>
+            <p>    box-sizing: border-box;</p>
+            <p>  }</p>
+            <p>  body {</p>
+            <p>    padding: 2em;</p>
+            <p>    font: 14px/1.5 Lato, sans-serif;</p>
+            <p>  }</p>
+            <p>  p {</p>
+            <p>    padding-bottom: 1.5em;</p>
+            <p>  }</p>
+            <p>}</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>print</h2>
+        <p>Intended for paged material and documents viewed on a screen in print preview mode</p>
+        <div class="code-block">
+            <p>@media print {</p>
+            <p>  body::before {</p>
+            <p>    display: block;</p>
+            <p>    content: 'The page is using a print preview or it was printed';</p>
+            <p>  }</p>
+            <p>}</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>screen</h2>
+        <p>Intended primarily for screens</p>
+        <div class="code-block">
+            <p>@media screen {</p>
+            <p>  body::before {</p>
+            <p>    display: block;</p>
+            <p>    content: 'The page is being shown on a screen';</p>
+            <p>  }</p>
+            <p>}</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
