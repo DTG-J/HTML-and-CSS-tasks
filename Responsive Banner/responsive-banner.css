@@ -12,6 +12,8 @@ a {
 .container {
     background-color: #eeeeee;
     border: 2px solid black;
+     display: flex;
+    justify-content: space-between;
 }
 
 h2 {
@@ -19,10 +21,11 @@ h2 {
 }
 
 .content {
+   
    background-color:  #ffffff;
    width: 90%;
    height: 90%;
-   display: block;
+   display: flex;
    flex-direction: column;
    margin: 50px auto;
    padding: 20px;
@@ -31,6 +34,8 @@ h2 {
 .p_text {
     width: 60%;
     padding-bottom: 10px;
+    color: #717171;
+    text-align: justify;
 }
 
 .autor {
@@ -40,6 +45,8 @@ h2 {
 }
 
 .chat {
+  display: flex;
+  width: 77px;
   background-color: #663399;
   color: #ffffff;
   padding: 7px;
@@ -50,15 +57,20 @@ h2 {
 }
 
 .learn_more {
+    display: flex;
+    width: 77px;
     padding: 7px;
+    margin-left: 5px;
     border-radius: 3px;
     border: none;
 }
 
 aside {
-    display: flex;
     background-color: #eeeeee;
-    width: 30%;
-    height: 90%;
-
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    width: 20%;
+    height: 70%;
+ 
 }
