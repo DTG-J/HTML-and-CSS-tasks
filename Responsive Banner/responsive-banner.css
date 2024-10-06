@@ -121,10 +121,84 @@ button {
     }
 
     .sidebar {
-        width: 35%; /* Adjust sidebar width for larger screens */
+        width: 28%; /* Adjust sidebar width for larger screens */
     }
 
     .image-placeholder {
         height: 350px; /* Adjust image size for larger screens */
+    }
+}
+
+
+@media screen and (orientation: portrait) {
+    /* Styles for portrait mode */
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .image-placeholder {
+        height: 250px;
+    }
+}
+
+/* Styles for landscape view with a minimum width of 1200px */
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .sidebar {
+        width: 30%;
+        height: 350px; /* Adjust sidebar height */
+    }
+
+    .image-placeholder {
+        height: 350px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Styles for portrait view with a maximum width of 800px */
+@media screen and (max-width: 800px) and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 250px; /* Adjust sidebar height */
+        margin-top: 20px;
+    }
+
+    .image-placeholder {
+        height: 250px;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
