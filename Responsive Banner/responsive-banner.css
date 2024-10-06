@@ -1,20 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .container {
     background-color: #eeeeee;
     border: 2px solid black;
 }
 
+h2 {
+    padding-bottom: 10px;
+}
+
 .content {
    background-color:  #ffffff;
-   width: 60%;
-   height: 80%;
+   width: 90%;
+   height: 90%;
    display: flex;
    flex-direction: column;
    margin: 50px auto;
    padding: 20px;
 }
 
+.p_text {
+    width: 60%;
+}
+
 .autor {
     width: 100%;
+    color: hsl(0deg 0% 49.41%);
+    font-weight: 600;
 }
 
 aside {
