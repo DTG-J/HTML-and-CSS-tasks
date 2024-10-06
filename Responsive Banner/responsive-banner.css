@@ -85,3 +85,46 @@ button {
     border-radius: 8px;
     border: 1px solid #ccc;
 }
+
+/* Responsive for medium screens (800px) */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column; /* Stack the content and sidebar */
+        padding: 20px;
+    }
+
+    .content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .image-placeholder {
+        height: 250px; /* Adjust sidebar height for small screens */
+    }
+}
+
+/* Responsive for large screens (1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Larger font for bigger screens */
+    }
+
+    .sidebar {
+        width: 35%; /* Adjust sidebar width for larger screens */
+    }
+
+    .image-placeholder {
+        height: 350px; /* Adjust image size for larger screens */
+    }
+}
