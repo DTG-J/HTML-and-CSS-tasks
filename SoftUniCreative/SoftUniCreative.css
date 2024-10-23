@@ -11,9 +11,12 @@ a {
 
 
 
-.logoContainer {
+.headerSection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
