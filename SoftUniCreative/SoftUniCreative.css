@@ -66,8 +66,10 @@ nav ul {
 }
 
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+nav ul > li:last-of-type {
+    background: #9b5dc6;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
