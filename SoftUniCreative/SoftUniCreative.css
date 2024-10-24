@@ -22,6 +22,13 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: #FFF;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    color: #625f5f;
+}
+
 .container {
     width: 1200px;
     margin-right: auto;
@@ -31,9 +38,33 @@ a {
 }
 
 .headerSection {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    z-index: 999;
+    position: fixed;
     width: 100%;
- 
+    background: #FFF;
+
 }
+
+.innerHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    color: #54546d;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    
+    align-items: center;
+}
+
 
 nav ul {
     display: flex;
